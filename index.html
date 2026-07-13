@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Студио Присма – персонализиран интериорен дизайн. Превръщаме пространствата в изкуство. Индивидуален подход, авторски дизайн, VR визуализации." />
+  <title>Студио Присма | Интериорен Дизайн</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">ПРИСМА</span>
+        <span class="logo-sub">studio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Начало</a></li>
+        <li><a href="#projects" class="nav-link">Проекти</a></li>
+        <li><a href="#services" class="nav-link">Услуги</a></li>
+        <li><a href="#about" class="nav-link">За нас</a></li>
+        <li><a href="#contact" class="nav-link">Контакти</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img
+        src="https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600"
+        alt="Луксозен интериор – Студио Присма"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Персонализиран интериорен дизайн</p>
+      <h1 class="hero-title reveal">
+        Пространства,<br />
+        <em>създадени за вас</em>
+      </h1>
+      <p class="hero-sub reveal">
+        Всяко пространство има своя потенциал.<br class="d-none-mobile" />
+        Нашата работа е да го разкрием.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-light">Разгледай проектите</a>
+        <a href="#contact" class="btn btn-outline-light">Свържи се с нас</a>
+      </div>
+    </div>
+    <a href="#projects" class="scroll-down" aria-label="Scroll down">
+      <svg width="24" height="40" viewBox="0 0 24 40" fill="none">
+        <rect x="1" y="1" width="22" height="38" rx="11" stroke="white" stroke-opacity="0.6" stroke-width="1.5"/>
+        <circle class="scroll-dot" cx="12" cy="10" r="3" fill="white" fill-opacity="0.8"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+        <p>Реализирани проекта</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+        <p>Години опит</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+        <p>Доволни клиенти</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span><span class="stat-plus"></span>
+        <p>Награди & финалисти</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / GALLERY ===== -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Портфолио</p>
+      <h2 class="section-title">Избрани проекти</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">Всички</button>
+      <button class="filter-btn" data-filter="house">Къща</button>
+      <button class="filter-btn" data-filter="apartment">Апартамент</button>
+      <button class="filter-btn" data-filter="office">Офис</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- Project 1 – КЪЩА.DLT -->
+      <div class="gallery-item reveal" data-cat="house">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/66e2e0afe0a06128d039cef0/b716fc25-90d2-4a7c-812a-360fb02d9b38/%D0%A1%D0%B2%D0%B5%D1%82%D1%8A%D0%BB+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80+%D1%81+%D1%82%D0%BE%D0%B0%D0%BB%D0%B5%D1%82%D0%BA%D0%B0+%D0%B8+%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D0%B8+%D0%BF%D0%BE+%D0%BF%D0%BE%D1%80%D1%8A%D1%87%D0%BA%D0%B0"
+            alt="Съвременна спалня – Къща DLT"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/8135416/pexels-photo-8135416.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800'"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Жилищен проект</p>
+              <h3>КЪЩА.DLT</h3>
+              <p class="gallery-desc">Съвременен дом с внимание към детайла, светлината и естествените материали.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 – АПАРТАМЕНТ.MKM -->
+      <div class="gallery-item reveal gallery-tall" data-cat="apartment">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/66e2e0afe0a06128d039cef0/c2294818-66c4-4186-ab47-29ef41e43e56/39_Living1.jpg"
+            alt="Апартамент MKM – дневна"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/6970061/pexels-photo-6970061.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=800'"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Апартамент</p>
+              <h3>АПАРТАМЕНТ.MKM</h3>
+              <p class="gallery-desc">Модерен градски апартамент с авторски дизайнерски решения.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 – Stock living room -->
+      <div class="gallery-item reveal" data-cat="apartment">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/8082565/pexels-photo-8082565.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800"
+            alt="Минималистична дневна"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Апартамент</p>
+              <h3>АПАРТАМЕНТ.FHR</h3>
+              <p class="gallery-desc">Луксозен апартамент с минималистична естетика и топли акценти.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 – Office -->
+      <div class="gallery-item reveal gallery-wide" data-cat="office">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/8146213/pexels-photo-8146213.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=1200"
+            alt="Модерен офис интериор"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Офис</p>
+              <h3>ОФИС.СФ</h3>
+              <p class="gallery-desc">Функционално офис пространство с идеална работна среда.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="gallery-item reveal" data-cat="house">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/5998134/pexels-photo-5998134.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800"
+            alt="Светла спалня с голям прозорец"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Жилищен проект</p>
+              <h3>ВИЛА.ВРН</h3>
+              <p class="gallery-desc">Вила с просторни спални и панорамни прозорци.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="gallery-item reveal" data-cat="apartment">
+        <div class="gallery-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/7045921/pexels-photo-7045921.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800"
+            alt="Зелен диван в апартамент"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <p class="gallery-cat">Апартамент</p>
+              <h3>АПАРТАМЕНТ.ЗЛТ</h3>
+              <p class="gallery-desc">Цветен акцент в модерна минималистична дневна.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center reveal" style="margin-top: 3rem;">
+      <a href="https://www.prizmastudio.bg/projects" target="_blank" class="btn btn-dark">
+        Всички проекти
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:8px;vertical-align:middle;">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="services-bg-text">УСЛУГИ</div>
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Какво предлагаме</p>
+      <h2 class="section-title">Нашите услуги</h2>
+      <div class="section-line"></div>
+      <p class="section-desc">
+        Предлагаме цялостни решения в областта на интериорния дизайн: от индивидуални жилищни пространства до мащабни обществени проекти.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="6" y="6" width="36" height="36" rx="2"/>
+            <path d="M6 18h36M18 18v24"/>
+            <path d="M24 12v6M30 12v6"/>
+          </svg>
+        </div>
+        <h3>Интериорен дизайн</h3>
+        <p>Изработваме всички етапи на вашия интериорен проект — от идейна концепция до технически проект и детайлна спецификация.</p>
+        <ul class="service-list">
+          <li>Идейна концепция</li>
+          <li>Технически проект</li>
+          <li>Детайлна спецификация</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="24" cy="24" r="18"/>
+            <path d="M24 6v18l10 10"/>
+            <path d="M6 24h6M36 24h6M24 6v6M24 36v6"/>
+          </svg>
+        </div>
+        <h3>Проектиране на мебели</h3>
+        <p>Авторски мебели по поръчка, проектирани специално за вашето пространство — функционалност и естетика в едно.</p>
+        <ul class="service-list">
+          <li>Мебели по поръчка</li>
+          <li>Вградени решения</li>
+          <li>Дизайнерски детайли</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M8 40L24 8l16 32H8z"/>
+            <path d="M16 28h16M20 20h8"/>
+          </svg>
+        </div>
+        <h3>Авторски надзор</h3>
+        <p>Осигуряваме координация на всички участници — от изпълнители до доставчици, за да гарантираме перфектна реализация.</p>
+        <ul class="service-list">
+          <li>Координация на строители</li>
+          <li>Контрол на качеството</li>
+          <li>Управление на проекта</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="4" y="12" width="40" height="28" rx="2"/>
+            <path d="M16 12V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/>
+            <circle cx="24" cy="26" r="6"/>
+            <path d="M18 26h2M28 26h2M24 20v2M24 30v2"/>
+          </svg>
+        </div>
+        <h3>VR & Визуализации</h3>
+        <p>Дигитални двойници, интерактивни обиколки и VR изживяване, което позволява да „влезете" в пространството преди реализацията.</p>
+        <ul class="service-list">
+          <li>Фотореалистични визуализации</li>
+          <li>Интерактивни обиколки</li>
+          <li>VR обиколки</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+            <path d="M4 14l20 10 20-10M24 24v20"/>
+          </svg>
+        </div>
+        <h3>Дигитални близнаци</h3>
+        <p>Точен виртуален модел на вашето пространство за прецизно планиране, презентиране и маркетинг.</p>
+        <ul class="service-list">
+          <li>Дигитален модел</li>
+          <li>Прецизно планиране</li>
+          <li>Маркетинг материали</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 36l10-14 8 10 6-8 12 12H6z"/>
+            <circle cx="34" cy="14" r="6"/>
+          </svg>
+        </div>
+        <h3>Маркетинг материали</h3>
+        <p>Брошури, презентации и дигитално съдържание — готови за употреба в маркетинга на вашия проект.</p>
+        <ul class="service-list">
+          <li>Брошури & презентации</li>
+          <li>Видео обиколки</li>
+          <li>Дигитално съдържание</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <div class="about-img-main">
+          <img
+            src="https://images.pexels.com/photos/7031715/pexels-photo-7031715.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=600"
+            alt="Интериорен проект – Студио Присма"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-img-accent">
+          <img
+            src="https://images.pexels.com/photos/6782578/pexels-photo-6782578.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=350"
+            alt="Детайл от интериор"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-num">5+</span>
+          <span class="about-badge-text">Години<br/>опит</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="section-eyebrow">За нас</p>
+        <h2 class="section-title">Ние вярваме, че всяко пространство има своя потенциал</h2>
+        <p class="about-text">
+          Добрият дизайн не познава бюджетни граници. Той познава приоритети, материали и визия. Защото средата, в която живеете, пряко влияе на това как се чувствате, мислите и творите.
+        </p>
+        <p class="about-text">
+          Работим с индивидуален подход към всеки клиент и всяка фаза: защото добрият дизайн започва с правилните въпроси, не с готови отговори.
+        </p>
+
+        <div class="team-cards">
+
+          <div class="team-card">
+            <div class="team-avatar">КН</div>
+            <div class="team-info">
+              <h4>Кристия Недкова-Луканова</h4>
+              <p class="team-role">Архитект, Управител</p>
+              <p class="team-desc">Магистър по архитектура – УАСГ, София & Cardiff University, UK. Специалист по пространствена оптимизация и управление на ресурси.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">НА</div>
+            <div class="team-info">
+              <h4>Надя Ангелова</h4>
+              <p class="team-role">Архитектурен дизайнер</p>
+              <p class="team-desc">Магистър по архитектура – UCL Bartlett, London & Cardiff University, UK. Практика в Cullinan Studio, London и Hirschmüller Schindele Architekten, Berlin.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#contact" class="btn btn-dark" style="margin-top:2rem;">
+          Работете с нас
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Как работим</p>
+      <h2 class="section-title">Нашият процес</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Консултация</h3>
+          <p>Запознаваме се с вашите нужди, стил и визия. Задаваме правилните въпроси, за да разберем вашата индивидуалност.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Концепция</h3>
+          <p>Разработваме персонализирана идейна концепция с визуализации, планове и избор на материали.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Проект</h3>
+          <p>Изготвяме пълна проектна документация — технически проект, детайли и спецификации.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Реализация</h3>
+          <p>Осигуряваме авторски надзор и координираме всички участници до финалното завършване.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX IMAGE ===== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" id="lbOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lb-close" id="lbClose" aria-label="Затвори">&#x2715;</button>
+      <button class="lb-prev" id="lbPrev" aria-label="Предишна">&#8249;</button>
+      <img id="lbImg" src="" alt="" />
+      <button class="lb-next" id="lbNext" aria-label="Следваща">&#8250;</button>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section id="testimonials">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Отзиви</p>
+      <h2 class="section-title">Какво казват клиентите</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="testimonials-slider" id="testimonialsSlider">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Изключително доволни от работата на Студио Присма. Те успяха да превърнат нашия апартамент в истински дом — функционален, красив и изцяло персонализиран за нас."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">М.Д.</div>
+            <div>
+              <p class="testimonial-name">Мария Димитрова</p>
+              <p class="testimonial-project">Апартамент, София</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Профессионализъм на най-високо ниво. VR обиколката преди реализацията ни помогна да вземем правилните решения. Резултатът надмина всички ни очаквания."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">С.П.</div>
+            <div>
+              <p class="testimonial-name">Стефан Петров</p>
+              <p class="testimonial-project">Къща, Боровец</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Кристия и Надя имат уникалния дар да разбират какво искаш, дори когато самият ти не знаеш как да го опишеш. Перфектен резултат!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">Е.М.</div>
+            <div>
+              <p class="testimonial-name">Елена Маринова</p>
+              <p class="testimonial-project">Офис, София</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots">
+      <span class="dot active" data-idx="0"></span>
+      <span class="dot" data-idx="1"></span>
+      <span class="dot" data-idx="2"></span>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">Свържете се</p>
+        <h2 class="section-title">Нека поговорим за вашия проект</h2>
+        <p class="contact-desc">Готови сме да превърнем вашата визия в реалност. Свържете се с нас за безплатна консултация.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">Телефон</p>
+              <a href="tel:+359878487766" class="contact-value">+359 878 48 7766</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">Имейл</p>
+              <a href="mailto:team@prizmastudio.bg" class="contact-value">team@prizmastudio.bg</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">Уебсайт</p>
+              <a href="https://www.prizmastudio.bg" target="_blank" class="contact-value">prizmastudio.bg</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/prizma.design.studio/" target="_blank" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61568477828198" target="_blank" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/105727515/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Вашето име *</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required />
+            <span class="form-error" id="nameErr">Моля, въведете вашето име</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Имейл адрес *</label>
+            <input type="email" id="email" name="email" placeholder="ivan@example.com" required />
+            <span class="form-error" id="emailErr">Моля, въведете валиден имейл</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+359 8XX XXX XXX" />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">— Изберете услуга —</option>
+              <option>Интериорен дизайн</option>
+              <option>Проектиране на мебели</option>
+              <option>Авторски надзор</option>
+              <option>VR & Визуализации</option>
+              <option>Консултация</option>
+              <option>Друго</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Съобщение *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Разкажете ни за вашия проект..." required></textarea>
+            <span class="form-error" id="msgErr">Моля, напишете съобщение</span>
+          </div>
+          <button type="submit" class="btn btn-dark btn-full" id="submitBtn">
+            <span id="btnText">Изпрати запитване</span>
+            <svg id="btnLoader" class="btn-loader d-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <circle cx="12" cy="12" r="10" stroke-opacity="0.3"/>
+              <path d="M12 2a10 10 0 0110 10" class="spin"/>
+            </svg>
+          </button>
+          <div class="form-success d-none" id="formSuccess">
+            ✓ Вашето съобщение е изпратено! Ще се свържем с вас скоро.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo footer-logo">
+          <span class="logo-text">ПРИСМА</span>
+          <span class="logo-sub">studio</span>
+        </a>
+        <p class="footer-tagline">Персонализиран интериорен дизайн.<br/>Всяко пространство има своя потенциал.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/prizma.design.studio/" target="_blank" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61568477828198" target="_blank" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/105727515/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#hero">Начало</a></li>
+          <li><a href="#projects">Проекти</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">За нас</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>Услуги</h4>
+        <ul>
+          <li>Интериорен дизайн</li>
+          <li>Проектиране на мебели</li>
+          <li>Авторски надзор</li>
+          <li>VR & Визуализации</li>
+          <li>Дигитални близнаци</li>
+          <li>Маркетинг материали</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Контакти</h4>
+        <p>
+          <a href="tel:+359878487766">+359 878 48 7766</a>
+        </p>
+        <p>
+          <a href="mailto:team@prizmastudio.bg">team@prizmastudio.bg</a>
+        </p>
+        <p>
+          <a href="https://www.prizmastudio.bg" target="_blank">prizmastudio.bg</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Студио Присма. Всички права запазени.</p>
+      <p>Направено с ♥ в България</p>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Обратно нагоре">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
